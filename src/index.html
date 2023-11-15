@@ -8,16 +8,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__bolo" src="./images/chocolate-cake.png" alt="bolo chocolate">
             <p class="hero__text">
-                O Maior aniversário começa em: 10d 12h 30m 15s
+                O Maior aniversário começa em: <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localidação</b>
+                        Nárnia - Cairparavel
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>É necessário convite?</b>
+                        Sim
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        25/12/2024 às 20 horas
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta seu Lugar!
+                </a>
+            </div>
         </div>
     </header>
+    <section class="event event--baloes">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__tittle">Balões</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, illum maxime nulla modi cupiditate magni assumenda dolorem mollitia, voluptate a corporis impedit similique, explicabo rerum inventore qui nemo laborum perspiciatis.
+                </p>
+            </div>
+            <img class="event__image" src="./images/baloom.jpg" alt="balões">
+        </div>
+    </section>
+    <section class="event event--gift event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__tittle">Presentes</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, illum maxime nulla modi cupiditate magni assumenda dolorem mollitia, voluptate a corporis impedit similique, explicabo rerum inventore qui nemo laborum perspiciatis.
+                </p>
+            </div>
+            <img class="event__image" src="./images/gift.jpg" alt="presentes">
+        </div>
+    </section>
+    <section class="event event--cupcake">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__tittle">Cupcake</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, illum maxime nulla modi cupiditate magni assumenda dolorem mollitia, voluptate a corporis impedit similique, explicabo rerum inventore qui nemo laborum perspiciatis.
+                </p>
+            </div>
+            <img class="event__image" src="./images/cupcake.jpg" alt="cupcake">
+        </div>
+    </section>
+    <section class="event event--cake event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__tittle">Bolo</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, illum maxime nulla modi cupiditate magni assumenda dolorem mollitia, voluptate a corporis impedit similique, explicabo rerum inventore qui nemo laborum perspiciatis.
+                </p>
+            </div>
+            <img class="event__image" src="./images/cake.jpg" alt="Bolo">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
